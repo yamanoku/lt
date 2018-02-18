@@ -12,38 +12,37 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+@import url('https://fonts.googleapis.com/css?family=Overpass');
 
 
 // Override theme settings (see ../template/settings.scss)
-$backgroundColor: #5ae291;
+$backgroundColor: #56bc8a;
 
-$mainColor: #222;
-$headingColor: #222;
+$mainColor: #fff;
+$headingColor: #fff;
 
 $mainFontSize: 3.2rem;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$mainFont: 'Overpass', Helvetica, sans-serif;
+$headingFont: 'Overpass', Helvetica, sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 600;
+$headingTextTransform: initial;
+$headingFontWeight: 400;
 $linkColor: #fff;
 $linkColorHover: lighten( $linkColor, 15% );
 $selectionBackgroundColor: lighten( $linkColor, 25% );
 
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
-$heading4Size: 1.0em;
-
-section.has-light-background {
-	&, h1, h2, h3, h4, h5, h6 {
-		color: #222;
-	}
-}
-
+$heading1Size: 2.4em;
+$heading2Size: 1.8em;
+$heading3Size: 1.4em;
+$heading4Size: 1.2em;
 
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
+
+.reveal {
+	h1, h2, h3, h4, h5, h6 {
+		font-weight: 700;
+	}
+}
